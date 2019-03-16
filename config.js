@@ -13,8 +13,8 @@ var config = {
 	skd_version: '0.0.14',
 	auth_url: 'https://auth.mercadolibre.com/authorization',
 	oauth_url: 'https://api.mercadolibre.com/oauth/token',
-	client_id :  process.env.App_ID,
-	secret_key : process.env.Secret_Key,
+	client_id :  '4397800438906548' , //process.env.App_ID,
+	secret_key : 'SYPIiBG8sPeqNuRaejGLG32hFOc6k49t', //process.env.Secret_Key,
 	redirect_uri : process.env.Redirect_URI,
 	site_id : 'MLA'
 };

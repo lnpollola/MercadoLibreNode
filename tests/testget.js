@@ -39,12 +39,21 @@ var getTrends = function(){
  });
 };
 
+var autorizacionYtoken = function(){
+    meliObject.getAuthURL('http://localhost:5000/') ;
+//     meliObject.getAuthURL(function (err, res) {
+//      console.log(err, res);
+//  });
+};
+
+
 var examples = {
     1: "Get your country's category tree",
     2: "Get user data",
     3: "Get multiple users at once",
     4: "Predict product category based on it's title",
-    5: "Get search trends for your country"
+    5: "Get search trends for your country",
+    6: "Prueba MELI"
 };
 function printOptions() {
     console.log("Ingrese un numero:");
@@ -68,6 +77,8 @@ stdin.addListener("data", function (d) {
         case 4: predictCategory();
         break;
         case 5: getTrends();
+        break;
+        case 6: autorizacionYtoken();
         break;
     }
 });
