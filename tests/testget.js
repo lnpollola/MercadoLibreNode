@@ -27,7 +27,7 @@ var getUsers = function(){
 };
 
 var predictCategory = function(){
-    var title = "Ipod%20Touch";
+    var title = "Iphone%207";
     meliObject.get('/sites/'+ config.config.site_id +'/category_predictor/predict?title=' + title, function(err,res){
         console.log(err,res);
     });
